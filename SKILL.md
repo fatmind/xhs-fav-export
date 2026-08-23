@@ -1,6 +1,6 @@
 ---
 name: xhs-fav-export
-description: 把小红书 Web 端当前登录用户「收藏」tab 的收藏笔记批量导出为本地 Markdown（每篇含标题、原文链接、正文、图片/视频 URL），支持 offset/count 分批断点续导。当用户需要导出/备份/检索自己的小红书收藏内容时唤起。
+description: 小红书收藏夹导出与备份——一键把 Web 端当前登录用户「收藏」tab 的收藏笔记批量导出为本地 Markdown（每篇含标题、原文链接、正文、图片/视频 URL），支持 offset/count 分批断点续导，断点可重跑不重复。不需要任何第三方 API key 或付费额度，用你 Chrome 里已登录的小红书账号跑。当用户需要导出/备份/检索自己的小红书收藏内容、想离线保存收藏笔记时唤起。【前置依赖】本 skill 需要 webclaw3 浏览器运行时（wc3-chrome 扩展 + Relay 服务 :3459），复用你已登录的 Chrome 小红书账号，无需重新登录。
 ---
 
 # xhs-fav-export
