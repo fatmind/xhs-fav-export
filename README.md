@@ -1,6 +1,6 @@
-# xhs-fav-export · 小红书收藏夹导出
+# xhs-fav-export · xhs收藏夹导出
 
-把自己小红书「收藏」tab 里的笔记**批量导出成本地 Markdown**，收藏不再吃灰——可检索、可跳转原文、博主删帖也不丢。
+把自己xhs「收藏」tab 里的笔记**批量导出成本地 Markdown**，收藏不再吃灰——可检索、可跳转原文、博主删帖也不丢。
 
 一句话：以前收藏了上千篇干货从来不看，现在一键导出成 Markdown 进 Obsidian / 语雀 / 本地目录，随时搜索、随时引用。
 
@@ -13,10 +13,10 @@
 
 ## 前提（必须装）
 
-- **必须装 webclaw3**：本 skill 靠 webclaw3 打开你已登录的小红书收藏夹，不装跑不了。
+- **必须装 webclaw3**：本 skill 靠 webclaw3 打开你已登录的xhs收藏夹，不装跑不了。
   - 装好后先检查通道：`node <webclaw3安装路径>/scripts/webclaw3.mjs doctor`
   - 路径一般在 `~/.claude/skills/webclaw3` 或 `~/.workbuddy/skills/webclaw3`
-- 浏览器里已登录小红书（导出的就是当前登录账号的收藏）。
+- 浏览器里已登录xhs（导出的就是当前登录账号的收藏）。
 
 ## 怎么用
 

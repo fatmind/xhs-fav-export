@@ -14,7 +14,7 @@
  *      （陷阱 1：body.click() 激活不了后台 tab 焦点，卡住不值得，仅当卡片数不足才滚动）
  *   5. 缓存卡片列表到 window.__cards（data-note-id / a.title / a.cover href，xsec_token 完整保留）
  *   6. 串行逐篇：确保列表页 → 快照 __t0 → 点击 a.cover 打开弹层 → 提取详情 → 立即落盘 → history.back()
- *      （串行是硬约束：多 tab 并行触发反爬；逐篇落盘让失败代价控制在单篇——陷阱 5）
+ *      （串行是硬约束：多 tab 并行触发站点访问限制；逐篇落盘让失败代价控制在单篇——陷阱 5）
  *   7. 写 summary.json（{ total_exported, offset, count, skipped_partial }）
  */
 
@@ -355,7 +355,7 @@ async function main() {
   }
   const offset = Number(input.offset ?? 0);
   const count = Number(input.count ?? 10);
-  const outputDir = input.outputDir || input.output_dir || join(process.cwd(), 'xhs-fav-export-output');
+  const outputDir = input.outputDir || input.output_dir || '/tmp/xhs-fav-export-output';
   if (!Number.isInteger(offset) || offset < 0) throw new Error(`offset 非法（须为非负整数）: ${offset}`);
   if (!Number.isInteger(count) || count < 1) throw new Error(`count 非法（须为正整数）: ${count}`);
   mkdirSync(outputDir, { recursive: true });
